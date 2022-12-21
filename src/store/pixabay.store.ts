@@ -68,6 +68,10 @@ class Pixabay {
    * @param image
    */
   saveImage(image: PixabayItem) {
+    if (this.savedImages.includes(image)) {
+      return;
+    }
+
     this.savedImages = [...this.savedImages, image];
   }
 
