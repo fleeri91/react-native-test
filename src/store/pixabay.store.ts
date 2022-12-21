@@ -68,7 +68,6 @@ class Pixabay {
    * @param image
    */
   saveImage(image: PixabayItem) {
-    console.log(image);
     this.savedImages = [...this.savedImages, image];
   }
 
